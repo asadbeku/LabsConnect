@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:elevation="8dp"
+        android:padding="8dp"
+        app:cardElevation="1dp"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/orgLogo"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/lab_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedCorner12dp" />
+
+
+            <TextView
+                android:id="@+id/orgName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toStartOf="@+id/saveOrg"
+                android:fontFamily="@font/catamaran_bold"
+                android:maxLines="1"
+                android:text="Laboratory of nuclear..."
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/orgLogo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/orgAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toStartOf="@+id/saveOrg"
+                android:fontFamily="@font/catamaran"
+                android:maxLines="1"
+                android:text="Laboratory address"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/orgLogo"
+                app:layout_constraintTop_toBottomOf="@+id/orgName" />
+
+            <TextView
+                android:id="@+id/orgPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/catamaran_bold"
+                android:text="Free"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/orgLogo"
+                app:layout_constraintTop_toBottomOf="@+id/orgAddress" />
+
+
+            <ImageView
+                android:id="@+id/saveOrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:src="@drawable/save_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/starIcon"
+                android:layout_width="14dp"
+                android:layout_height="0dp"
+                android:src="@drawable/star_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/orgPayment"
+                app:layout_constraintTop_toBottomOf="@id/orgPayment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/catamaran_bold"
+                android:text="4.5 (12)"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/starIcon"
+                app:layout_constraintTop_toBottomOf="@id/orgPayment" />
+
+
+            <TextView
+                android:id="@+id/orgType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/catamaran"
+                android:text="Governmental"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/orgTypeIcon"
+                app:layout_constraintEnd_toStartOf="@+id/orgTypeIcon"
+                app:layout_constraintTop_toTopOf="@id/orgTypeIcon" />
+
+            <ImageView
+                android:id="@+id/orgTypeIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/governmetal_icon"
+                app:layout_constraintBottom_toBottomOf="@id/starIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/starIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

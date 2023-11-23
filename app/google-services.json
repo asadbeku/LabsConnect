@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10176249120",
+    "project_id": "labsconnectuz",
+    "storage_bucket": "labsconnectuz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10176249120:android:d9fcfde7726abd1168ab45",
+        "android_client_info": {
+          "package_name": "uz.project.labsconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvZqbw3qT9sbQRzo-dPceefPWp146yDYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_signup"
+    app:startDestination="@id/launchFragment2">
+
+    <fragment
+        android:id="@+id/signupConformCodeFragment2"
+        tools:layout="@layout/fragment_signup_conform_code"
+        android:name="uz.project.labsconnect.user.signup.SignupConformCodeFragment"
+        android:label="SignupConformCodeFragment" >
+        <action
+            android:id="@+id/action_signupConformCodeFragment2_to_signupSetPasswordFragment2"
+            app:destination="@id/signupSetPasswordFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signingFragment2"
+        tools:layout="@layout/fragment_signin"
+        android:name="uz.project.labsconnect.user.signup.SigningFragment"
+        android:label="SigningFragment" >
+        <action
+            android:id="@+id/action_signingFragment2_to_signupInputPhoneFragment2"
+            app:destination="@id/signupInputPhoneFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupInputPhoneFragment2"
+        tools:layout="@layout/fragment_signup_input_phone"
+        android:name="uz.project.labsconnect.user.signup.SignupInputPhoneFragment"
+        android:label="SignupInputPhoneFragment" >
+        <action
+            android:id="@+id/action_signupInputPhoneFragment2_to_signupConformCodeFragment2"
+            app:destination="@id/signupConformCodeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupSetPasswordFragment2"
+        tools:layout="@layout/fragment_signup_set_password"
+        android:name="uz.project.labsconnect.user.signup.SignupSetPasswordFragment"
+        android:label="SignupSetPasswordFragment" />
+    <fragment
+        android:id="@+id/launchFragment2"
+        tools:layout="@layout/fragment_launch_screen"
+        android:name="uz.project.labsconnect.user.signup.LaunchFragment"
+        android:label="LaunchFragment" >
+        <action
+            android:id="@+id/action_launchFragment2_to_signingFragment2"
+            app:destination="@id/signingFragment2" />
+    </fragment>
+</navigation>

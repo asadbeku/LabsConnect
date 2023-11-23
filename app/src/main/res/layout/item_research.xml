@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="@color/white"
+    android:elevation="8dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/researchCategoryImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_launcher_background"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/researchName"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/catamaran_medium"
+                    android:text="Symptoms and Signs of Colorectal Cancer in Young Adults: A Systematic Review and Meta-analysis"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/catamaran_thin"
+                    android:text="Researched in"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/researchedOrganization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/catamaran_bold"
+                    android:layout_marginEnd="8dp"
+                    android:text="National University of Uzbekistan"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+

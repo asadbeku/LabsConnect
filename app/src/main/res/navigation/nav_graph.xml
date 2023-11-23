@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="uz.project.labsconnect.user.signup.LaunchFragment"
+        android:label="LaunchFragment"
+        tools:layout="@layout/fragment_launch_screen">
+        <action
+            android:id="@+id/action_launchFragment_to_signingFragment"
+            app:destination="@id/signingFragment" />
+        <action
+            android:id="@+id/action_launchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationFirstScreenFragment"
+        android:name="uz.project.labsconnect.user.signup.PersonalInformationFirstScreenFragment"
+        android:label="PersonalInformationFirstScreenFragment"
+        tools:layout="@layout/fragment_personal_information">
+        <action
+            android:id="@+id/action_personalInformationFirstScreenFragment_to_personalInformationSecondScreenFragment"
+            app:destination="@id/personalInformationSecondScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationFourthScreenFragment"
+        android:name="uz.project.labsconnect.user.signup.PersonalInformationFourthScreenFragment"
+        android:label="PersonalInformationFourthScreenFragment"
+        tools:layout="@layout/fragment_personal_information_fourth_screen">
+        <action
+            android:id="@+id/action_personalInformationFourthScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationSecondScreenFragment"
+        android:name="uz.project.labsconnect.user.signup.PersonalInformationSecondScreenFragment"
+        android:label="PersonalInformationSecondScreenFragment"
+        tools:layout="@layout/fragment_personal_information_second_screen">
+        <action
+            android:id="@+id/action_personalInformationSecondScreenFragment_to_personalInformationThirdScreenFragment"
+            app:destination="@id/personalInformationThirdScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationThirdScreenFragment"
+        android:name="uz.project.labsconnect.user.signup.PersonalInformationThirdScreenFragment"
+        android:label="PersonalInformationThirdScreenFragment"
+        tools:layout="@layout/fragment_personal_information_third_screen">
+        <action
+            android:id="@+id/action_personalInformationThirdScreenFragment_to_personalInformationFourthScreenFragment"
+            app:destination="@id/personalInformationFourthScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signingFragment"
+        android:name="uz.project.labsconnect.user.signup.SigningFragment"
+        android:label="SigningFragment"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_signingFragment_to_signupInputPhoneFragment"
+            app:destination="@id/signupInputPhoneFragment" />
+        <action
+            android:id="@+id/action_signingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupConformCodeFragment"
+        android:name="uz.project.labsconnect.user.signup.SignupConformCodeFragment"
+        android:label="SignupConformCodeFragment"
+        tools:layout="@layout/fragment_signup_conform_code">
+        <action
+            android:id="@+id/action_signupConformCodeFragment_to_signupSetPasswordFragment"
+            app:destination="@id/signupSetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupInputPhoneFragment"
+        android:name="uz.project.labsconnect.user.signup.SignupInputPhoneFragment"
+        android:label="SignupInputPhoneFragment"
+        tools:layout="@layout/fragment_signup_input_phone">
+        <action
+            android:id="@+id/action_signupInputPhoneFragment_to_signupConformCodeFragment"
+            app:destination="@id/signupConformCodeFragment" />
+        <action
+            android:id="@+id/action_signupInputPhoneFragment_to_signingFragment"
+            app:destination="@id/signingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupSetPasswordFragment"
+        android:name="uz.project.labsconnect.user.signup.SignupSetPasswordFragment"
+        android:label="SignupSetPasswordFragment"
+        tools:layout="@layout/fragment_signup_set_password">
+        <action
+            android:id="@+id/action_signupSetPasswordFragment_to_personalInformationFirstScreenFragment"
+            app:destination="@id/personalInformationFirstScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.project.labsconnect.user.main.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="uz.project.labsconnect.user.main.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="uz.project.labsconnect.user.main.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/organizationFragment"
+        android:name="uz.project.labsconnect.user.main.organization.OrganizationActivity"
+        android:label="OrganizationFragment"
+        tools:layout="@layout/fragment_organization" />
+    <fragment
+        android:id="@+id/equipmentDetailFragment"
+        android:name="uz.project.labsconnect.user.main.equipment.EquipmentDetailActivity"
+        android:label="EquipmentDetailFragment"
+        tools:layout="@layout/fragment_equipment_detail" />
+    <fragment
+        android:id="@+id/researchFragment"
+        tools:layout="@layout/fragment_research"
+        android:name="uz.project.labsconnect.user.main.research.ResearchFragment"
+        android:label="ResearchFragment" />
+</navigation>

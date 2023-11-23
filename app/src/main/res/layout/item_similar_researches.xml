@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F8F9FA"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/researchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/catamaran"
+            android:maxLines="2"
+            android:text="Clinicopathological and Molecular Features of Colorectal Cancer in Patients Less than 40"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/researchAuthors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/catamaran"
+            android:maxLines="1"
+            android:text="Author's: Yeo SA, Chew MH, Chong JL, Ong WS, Loh M, Taichuu"
+            android:textColor="#9095A1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/researchPublishedIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/catamaran"
+            android:maxLines="2"
+            android:text="Published in: Colorectal Disease, 2019"
+            android:textColor="#9095A1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/researchSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/catamaran"
+            android:maxLines="3"
+            android:text="Summary: This study provides insights into the clinicopathological and molecular characteristics of colorectal cancer in patients under 40 years old. This study provides insights into the clinicopathological and molecular characteristics of colorectal cancer in patients under 40 years old."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pdfIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pdf_icon" />
+
+        <ImageView
+            android:id="@+id/htmlIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/html_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/openResearchButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/catamaran"
+            android:text="Open research"
+            android:textSize="14sp"
+            app:cornerRadius="12dp" />
+
+        <ImageButton
+            android:id="@+id/shareResearchButton"
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@drawable/button_background_12dp"
+            android:src="@drawable/share_button_icon"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+</LinearLayout>
